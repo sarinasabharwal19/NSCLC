@@ -6,8 +6,8 @@ from PIL import Image
 
 
 
-client = OpenAI(api_key=OPEN_API_KEY)
-assistant_id = ASSIS_ID
+client = OpenAI(api_key=os.environ['OPEN_API_KEY'])
+assistant_id = os.environ['ASSIS_ID']
 if "start_chat" not in st.session_state:
     st.session_state.start_chat = False
 
