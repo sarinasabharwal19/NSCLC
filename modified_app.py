@@ -28,7 +28,14 @@ st.title("NSCLC Insights")
 
 # Function to process messages (remains unchanged)
 def process_message_with_citations(message):
-    # ... existing code ...
+    """Extract content and annotations from the message and format citations as footnotes."""
+    
+    message_content = message.content[0].text
+    annotations = message_content.annotations if hasattr(message_content, 'annotations') else []
+
+    # Add footnotes to the end of the message content
+    full_response = message_content.value 
+    return full_response
 
 # Custom CSS for styling
 st.markdown(
@@ -60,6 +67,7 @@ st.markdown(
 # Chat display area
 with st.container():
     chat_history = st.empty()
+    
     # Display chat history
     # ... existing code ...
 
@@ -71,6 +79,7 @@ with st.container():
     with col2:
         if st.button('Send'):
             # Process and update chat window (you'll need to implement the logic)
+            
             st.session_state.chat_window += f"\nUser: {user_input}\nBot: [response]"
 
 # Add more sections as needed
