@@ -105,32 +105,88 @@ else:
     # Prompt to start the chat
     st.write("Please click 'Start Chat' to begin the conversation.")
 
-# Custom CSS for styling
+# Custom CSS for Quilt.AI inspired styling
 st.markdown(
     '''
     <style>
+    /* Overall page styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #fff;
+    }
+
+    /* Chat box styling */
     .chat-box {
-        background-color: #f0f2f6;
+        background-color: #fff;
+        border: 1px solid #d0d7de;
         border-radius: 10px;
-        padding: 10px;
+        padding: 15px;
         height: 500px;
         overflow-y: auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    /* Message styling */
     .message {
-        padding: 5px;
-        border-radius: 5px;
+        padding: 10px;
+        border-radius: 8px;
         margin-bottom: 10px;
+        line-height: 1.4;
+        font-size: 16px;
     }
     .user-message {
-        background-color: #e1f5fe;
+        background-color: #eff6ff;
+        color: #0366d6;
+        margin-left: auto;
+        width: fit-content;
+        max-width: 80%;
     }
     .bot-message {
-        background-color: #dcedc8;
+        background-color: #f6f8fa;
+        color: #24292e;
+        margin-right: auto;
+        width: fit-content;
+        max-width: 80%;
+    }
+
+    /* Input area styling */
+    .stTextInput>div>div>input {
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #d1d5da;
+        font-size: 16px;
+    }
+
+    /* Button styling */
+    button {
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: #0366d6;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+    /* Sidebar styling */
+    .css-1d391kg {
+        background-color: #f8f9fa;
+        border-right: 1px solid #dee2e6;
     }
     </style>
     ''',
     unsafe_allow_html=True
 )
 
-# Redesigning the chat interface while retaining original functionality
-# (The chat display and input area will be styled and organized as per the new design)
+# Redesigning the chat interface with Quilt.AI inspired aesthetics
+# (The chat display and input area will be styled and organized as per the new advanced design)
